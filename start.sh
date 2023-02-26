@@ -1,6 +1,5 @@
 #!/bin/bash
 
-sed -i 's/8888/'"$PORT"'/g' /www/server/panel/data/port.pl
-/etc/init.d/bt fix
-/etc/init.d/bt start
+sed -i 's/7800/'"8888"'/g' /www/server/panel/data/port.pl
+/etc/init.d/bt restart
 /bin/sh
