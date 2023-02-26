@@ -1,0 +1,16 @@
+version: '2'
+services:
+    myownaapanel:
+      image: finalaapanel
+      ports:
+        - "80:80"
+        - "443:443"
+        - "888:888"
+        - "8888:8888"
+        - "21:21"
+      volumes:
+        - ~/aapanel/wwwroot:/www/wwwroot
+        - ~/mysql_data:/www/server/data
+        - ~/vhost:/www/server/panel/vhost
+        - ~/aapanel/logs:/www/wwwlogs
+      tty: true
