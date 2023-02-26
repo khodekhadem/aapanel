@@ -1,7 +1,7 @@
 version: '2'
 services:
     myownaapanel:
-      image: finalaapanel
+      image: myaapanel
       ports:
         - "80:80"
         - "443:443"
