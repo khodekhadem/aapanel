@@ -14,6 +14,7 @@ adam3278/aapanel``
 
 Informations
 ==
+<ip>:8888/aapanel
 Default username/password: aapanel / aapanel123
 
 Panel: 8989 [Evironment PORT]
