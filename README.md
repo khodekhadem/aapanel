@@ -2,6 +2,8 @@
 Fixed version of aapanel/aapanel:lib - runs bt fix and bt start automaticly
 
 How to use
+docker build --tag myaapanel .
+docker compose up -d
 ==
 ``sh
 $docker run -dt \
