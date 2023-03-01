@@ -9,8 +9,12 @@ services:
         - "8888:8888"
         - "21:21"
       volumes:
-        - ~/aapanel/wwwroot:/www/wwwroot
-        - ~/mysql_data:/www/server/data
-        - ~/vhost:/www/server/panel/vhost
-        - ~/aapanel/logs:/www/wwwlogs
+        #- ~/aapanel/wwwroot:/www/wwwroot
+        #- ~/mysql_data:/www/server/data
+        #- ~/vhost:/www/server/panel/vhost
+        #- ~/aapanel/logs:/www/wwwlogs
+        - /core/db/aapanel/wwwroot:/www/wwwroot
+        - /core/db/aapanel/aapanel_mysql_data:/www/server/data
+        - /core/db/aapanel/aapanel_vhost:/www/server/panel/vhost
+        - /core/log/aapanel/aapanel_logs:/www/wwwlogs
       tty: true
